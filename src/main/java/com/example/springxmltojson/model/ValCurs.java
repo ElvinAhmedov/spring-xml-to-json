@@ -1,4 +1,4 @@
-package com.example.springxmltojson.entity;
+package com.example.springxmltojson.model;
 
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;

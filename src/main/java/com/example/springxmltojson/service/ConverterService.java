@@ -2,7 +2,7 @@ package com.example.springxmltojson.service;
 
 import com.example.springxmltojson.dto.request.ConverterRequest;
 import com.example.springxmltojson.dto.response.ConverterResponse;
-import com.example.springxmltojson.entity.ValCurs;
+import com.example.springxmltojson.model.ValCurs;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.MediaType;
@@ -68,7 +68,8 @@ public class ConverterService {
         return valute;
     }
 
-    private  Optional<BigDecimal> convertToOtherValute(ConverterRequest converterRequest) throws JsonProcessingException {
+    private  Optional<BigDecimal> convertToOtherValute(ConverterRequest converterRequest)
+            throws JsonProcessingException {
         ValCurs valCurs = converted();
 
 
